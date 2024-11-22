@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span>her power</span>
+    <br>
+    <span class="a">ranisankail,Ranisankail</span>
+    <br>
+    <span id="a">Web design & Development</span>
+    <br>
+    <button type="button" id="btn">click</button>
+</body>
+
+    <script>
+        var x = document.getElementById('a');
+        x.style.color = 'red';
+
+        var y = document.querySelector('.a');
+        y.style.color = 'purple';
+
+        var z = document.querySelector('span');
+        z.style.color = 'green';
+
+        document.getElementById('btn').addEventListener("click", function (event){
+           
+            event.preventDefault();
+            var w = document.getElementById('btn');
+            w.style.backgroundColor = 'orange';
+        });
+    </script>
+</html>

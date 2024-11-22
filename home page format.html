@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <style>
+        
+      
+        .heig{
+            height: 100vh;
+           
+        }
+        .topside{
+            height: 150px;
+            width: 100%;
+            border-radius: 10px;
+        }
+        .ls{
+            width: 80%;
+            float: left;
+        }
+        .rs{
+            width: 20%;
+            float: right;
+        }
+        .a{
+            border: 2px solid;
+            border-radius: 10px;
+        }
+        .rsbox{
+            width: 70%;
+            box-shadow: 0px 5px 5px gray;
+            margin: auto;
+        }
+        .tb{
+            height: 200px;
+            overflow: auto;
+            
+        }
+        .tb::-webkit-scrollbar {
+            display: none;
+        }
+       
+        .tlh{
+            display: none;
+        }
+       
+        .hi{
+            height: 150px;
+        }
+        .imgtop{
+            height: 100px;
+            width: 120px;
+        }
+        .sidenav{
+            display: none;
+        }
+        .rnd{
+            border-radius: 10px;
+        }
+        
+        
+        @media only screen and (max-width: 600px) {
+            .lsnh{
+                display: none;
+            }
+
+            .topside{
+            height: 100px;
+            width: 100%;
+        }
+            .ls{
+            width: 50%;
+            
+        }
+        .rs{
+            width: 50%;
+           
+        }
+        .tl{
+            width: 5%;
+            float: left;
+            height: 100px;
+        }
+        .tr{
+            width: 95%;
+            float: right;
+            height: 100px;
+        }
+       
+        .hi{
+            height: 100px;
+        }
+        .imgtop{
+            height: 80px;
+            width: 100px;
+        }
+        .tlh{
+            display: block;
+            position: relative;
+            left: 1%;
+            cursor: pointer;
+        }
+        .sidenav{
+            width: 50%;
+            height: 100vh;
+            position: fixed;
+            top: 0%;
+            z-index: 1;
+            
+        }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row heig">
+            <div  class=" rnd col-2 ml-2 bg-danger lsnh">
+
+            </div>
+            <div id="x" class="sidenav ml-2 bg-primary">
+                <span onclick=" snacl()">
+                    close
+                </span>
+            </div>
+
+            <div class="col">
+               <div class="container">
+                <div class="row">
+                    <div class="topside bg-secondary">
+                       <div class="tlh">
+                            <div class="tl tlh d-flex justify-content-center align-items-center">
+                                <img width="30px" height="30px" src="home icon img.png" alt="">
+                            </div>
+                       </div>
+
+                        <div class="tr">
+                            <div class="container">
+                                <div  class=" hi d-flex justify-content-between align-items-center">
+                                    <div>
+                                        welcome
+                                    </div>
+    
+                                    <div  class=" hi d-flex align-items-end">
+                                        <img class="imgtop" src="student home page logo.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="ls">
+                        <div class="container">
+                            <span>classInfo</span>
+                            <div class="row">
+                                <div class="col a">
+                                    <div class="container d-flex justify-content-around">
+
+                                        <div>
+                                            <div class="d-flex">
+                                                <img height="30px" width="30px" src="html.png" alt="">
+                                                <img height="30px" width="30px" src="html.png" alt="">
+                                            </div>
+
+                                            <div class="d-flex">
+                                                <img height="30px" width="30px" src="html.png" alt="">
+                                                <img height="30px" width="30px" src="html.png" alt="">
+                                            </div>
+                                            
+                                        </div>
+
+                                        <div class="d-flex align-items-center">
+                                            <img height="30px" width="30px" src="php.png" alt="">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="text-center">
+                                        <span class="d-block">Roadmap</span>
+                                        <span class="d-block">WDD</span>
+                                    </div>
+                                </div>
+                                <div class="col a">
+                                    b
+                                </div>
+                                <div class="col a">
+                                    c
+                                </div>
+                            </div>
+                            <span>enrolled class</span>
+                            <div class="row">
+                                <div class="col a">
+                                    a
+                                </div>
+                                <div class="col a">
+                                    b
+                                </div>
+                                <div class="col a">
+                                    c
+                                </div>
+                            </div>
+
+                            <span>BRL FB GRP Post Format</span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor totam molestias reprehenderit aliquid aut, ipsum ullam? Autem, tempora. Doloremque esse, a porro tempore voluptas cumque repellendus beatae similique corrupti nam!
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="rs ml-1">
+                        <span class="d-block text-center">instructorinfo</span>
+                        <div class="rsbox" style="width: 100%;">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        </div>
+
+                        <span class="d-block text-center">instructorinfo</span>
+                        <div class="rsbox tb">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique deserunt aspernatur illum architecto accusantium, molestiae culpa illo nobis eius, iste sit ad nulla laboriosam nesciunt magnam cupiditate dolores. A, dolorem.
+                        </div>
+                    </div>
+                </div>
+               </div>
+
+                
+            </div>
+        </div>
+    </div>
+   
+    <script>
+         var abc = document.getElementById('x');
+        
+       document.querySelector('.tlh').addEventListener("click", function (event){
+         event.preventDefault();
+        abc.style.display = 'block';
+        
+       });
+        function snacl(){
+            abc.style.display = 'none';
+        }
+    </script>
+    
+</body>
+</html>
